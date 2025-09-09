@@ -1,1 +1,11 @@
 {"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-08T23:01:28.087+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-09T23:50:24.028+0800","caller":"initialize/gorm.go:19","msg":"Failed to connect to MySQL:","error":"Error 1045 (28000): Access denied for user 'root'@'172.17.0.1' (using password: YES)"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-09T23:55:29.153+0800","caller":"initialize/gorm.go:17","msg":"Connect: Mysql [root:123456@tcp(127.0.0.1:3307)/blog_db?charset=utf8mb4&parseTime=True&loc=Local]"}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-09T23:55:29.173+0800","caller":"initialize/gorm.go:22","msg":"Failed to connect to MySQL:","error":"Error 1045 (28000): Access denied for user 'root'@'172.17.0.1' (using password: YES)"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T00:05:56.605+0800","caller":"initialize/gorm.go:17","msg":"Connect: Mysql [root:123456@tcp(127.0.0.1:3307)/blog_db?charset=utf8mb4&parseTime=True&loc=Local]"}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-10T00:05:56.617+0800","caller":"initialize/gorm.go:22","msg":"Failed to connect to MySQL:","error":"driver: bad connection"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T00:07:55.535+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T00:07:55.535+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-10T00:10:33.873+0800","caller":"initialize/gorm.go:21","msg":"Failed to connect to MySQL:","error":"driver: bad connection"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T00:11:21.087+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T00:11:21.086+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
