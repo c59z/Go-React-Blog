@@ -34,4 +34,6 @@ go get "github.com/elastic/go-elasticsearch/v8"
 go get "github.com/robfig/cron/v3"
 
 go get "github.com/songzhibin97/gkit/cache/local_cache"
+
+go get "github.com/gofrs/uuid"
 ```

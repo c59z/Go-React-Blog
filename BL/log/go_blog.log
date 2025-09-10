@@ -9,3 +9,5 @@
 {"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-10T00:10:33.873+0800","caller":"initialize/gorm.go:21","msg":"Failed to connect to MySQL:","error":"driver: bad connection"}
 {"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T00:11:21.087+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
 {"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T00:11:21.086+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T23:27:05.639+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T23:27:05.638+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
