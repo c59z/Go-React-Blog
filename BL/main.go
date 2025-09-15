@@ -2,6 +2,7 @@ package main
 
 import (
 	"blog-go/core"
+	"blog-go/flag"
 	"blog-go/global"
 	"blog-go/initialize"
 )
@@ -14,6 +15,8 @@ func main() {
 	global.ESClient = initialize.ConnectES()
 	initialize.OtherInit()
 	defer global.Redis.Close()
+
+	flag.InitFlag()
 
 	initialize.InitCron()
 

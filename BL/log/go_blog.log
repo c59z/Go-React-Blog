@@ -11,3 +11,6 @@
 {"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T00:11:21.086+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
 {"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T23:27:05.639+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
 {"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-10T23:27:05.638+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-15T23:20:07.753+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-15T23:20:07.753+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-15T23:22:13.783+0800","caller":"flag/enter.go:24","msg":"Successfully created table structure"}
