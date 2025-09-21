@@ -1,6 +1,8 @@
 module blog-go
 
-go 1.23.9
+go 1.24.0
+
+toolchain go1.24.7
 
 require (
 	gopkg.in/yaml.v3 v3.0.1
@@ -47,7 +49,8 @@ require (
 	golang.org/x/arch v0.8.0 // indirect
 	golang.org/x/crypto v0.23.0 // indirect
 	golang.org/x/net v0.25.0 // indirect
-	golang.org/x/sys v0.20.0 // indirect
+	golang.org/x/sys v0.36.0 // indirect
+	golang.org/x/term v0.35.0 // indirect
 	golang.org/x/text v0.20.0 // indirect
 	google.golang.org/protobuf v1.34.1 // indirect
 )
