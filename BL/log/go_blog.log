@@ -25,3 +25,52 @@
 {"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-21T20:55:01.167+0800","caller":"flag/enter.go:94","msg":"Failed to create an administrator:","error":"password length should be between 8 and 20 characters"}
 {"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-21T20:56:06.791+0800","caller":"flag/enter.go:94","msg":"Failed to create an administrator:","error":"passwords do not match"}
 {"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-21T20:56:26.309+0800","caller":"flag/enter.go:96","msg":"Successfully created an administrator"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-22T23:40:07.846+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-22T23:40:07.845+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-22T23:41:56.502+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-22T23:41:56.502+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T21:28:51.133+0800","caller":"initialize/gorm.go:21","msg":"Failed to connect to MySQL:","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:30:38.632+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:30:38.632+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:39:55.665+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:39:55.665+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:50:02.558+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:50:02.557+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:50:54.662+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:50:54.662+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:53:19.368+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:53:19.367+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:56:28.386+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:56:28.387+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:56:33.852+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:56:33.852+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:58:30.553+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T21:58:30.553+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:08:39.198+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:08:39.198+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:27:39.705+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:27:39.705+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:28:08.182+0800","caller":"api/base.go:53","msg":"Failed to send email:","error":"tls: first record does not look like a TLS handshake"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:29:00.948+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:29:00.948+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:29:40.581+0800","caller":"api/base.go:53","msg":"Failed to send email:","error":"504 5.7.4 Unrecognized authentication type [SI2PR02CA0047.apcprd02.prod.outlook.com 2025-09-24T14:28:44.723Z 08DDF6B40DF11FE5]"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:31:14.047+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:31:14.047+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:31:51.615+0800","caller":"api/base.go:53","msg":"Failed to send email:","error":"504 5.7.4 Unrecognized authentication type [SG2P153CA0007.APCP153.PROD.OUTLOOK.COM 2025-09-24T14:30:54.769Z 08DDF53EB29785C5]"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:33:58.325+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:33:58.324+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:34:11.443+0800","caller":"api/base.go:63","msg":"Failed to send email:","error":"504 5.7.4 Unrecognized authentication type [SG2PR04CA0164.apcprd04.prod.outlook.com 2025-09-24T14:34:01.687Z 08DDFAD0EF53184F]"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:35:46.131+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:35:46.130+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:35:48.011+0800","caller":"api/base.go:63","msg":"Failed to send email:","error":"mail: missing '@' or angle-addr"}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:35:50.341+0800","caller":"api/base.go:63","msg":"Failed to send email:","error":"mail: missing '@' or angle-addr"}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:35:54.465+0800","caller":"api/base.go:63","msg":"Failed to send email:","error":"mail: missing '@' or angle-addr"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:38:30.809+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:38:30.808+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:38:45.454+0800","caller":"api/base.go:63","msg":"Failed to send email:","error":"failed to send email: 535 5.7.139 Authentication unsuccessful, basic authentication is disabled. [SG2P153CA0023.APCP153.PROD.OUTLOOK.COM 2025-09-24T14:38:34.297Z 08DDFB3D2B2D6AF9]"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:45:55.048+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:45:55.047+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:46:10.663+0800","caller":"api/base.go:63","msg":"Failed to send email:","error":"failed to send email: 535 5.7.139 Authentication unsuccessful, basic authentication is disabled. [SG2PR01CA0109.apcprd01.prod.exchangelabs.com 2025-09-24T14:46:03.265Z 08DDFB73A7621BEA]"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:48:45.067+0800","caller":"core/server.go:23","msg":"server run success on ","address":"127.0.0.1:8080"}
+{"level":"\u001b[34mINFO\u001b[0m","time":"2025-09-24T22:48:45.066+0800","caller":"initialize/cron.go:17","msg":"start","keysAndValues":null}
+{"level":"\u001b[31mERROR\u001b[0m","time":"2025-09-24T22:49:00.683+0800","caller":"api/base.go:63","msg":"Failed to send email:","error":"failed to send email: 535 5.7.139 Authentication unsuccessful, basic authentication is disabled. [SI2PR01CA0029.apcprd01.prod.exchangelabs.com 2025-09-24T14:48:56.483Z 08DDFAD507F5957E]"}
