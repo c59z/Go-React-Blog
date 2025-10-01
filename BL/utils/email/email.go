@@ -12,20 +12,22 @@ func Email(To, subject, body string) error {
 	emailCfg := global.Config.Email // load email settings from global config
 
 	from := emailCfg.From
-	nickname := emailCfg.Nickname
+	// nickname := emailCfg.Nickname
 	secret := emailCfg.Secret
 	host := emailCfg.Host
 	port := emailCfg.Port
+	isSSL := emailCfg.IsSSL
 
 	// create a new gomail message
 	m := gomail.NewMessage()
 
 	// set sender with optional nickname
-	if nickname != "" {
-		m.SetHeader("From", m.FormatAddress(from, nickname))
-	} else {
-		m.SetHeader("From", from)
-	}
+	// if nickname != "" {
+	// 	m.SetHeader("From", m.FormatAddress(from, nickname))
+	// } else {
+	// 	m.SetHeader("From", from)
+	// }
+	m.SetHeader("From", from)
 
 	// split recipients by comma and set
 	m.SetHeader("To", To)
@@ -35,10 +37,7 @@ func Email(To, subject, body string) error {
 	// create dialer
 	d := gomail.NewDialer(host, port, from, secret)
 
-	// if using 465 (implicit TLS), enable SSL
-	if port == 465 {
-		d.SSL = true
-	}
+	d.SSL = isSSL
 
 	// send the email
 	if err := d.DialAndSend(m); err != nil {
