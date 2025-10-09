@@ -66,3 +66,8 @@ func (b *BaseApi) SendEmailVerifcationCode(c *gin.Context) {
 	}
 	response.OkWithMessage("Successfully sent email", c)
 }
+
+func (b *BaseApi) GithubLoginURL(c *gin.Context) {
+	url := global.Config.Github.GitHubLoginURL()
+	response.OkWithData(url, c)
+}

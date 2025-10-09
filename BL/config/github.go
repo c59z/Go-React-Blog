@@ -9,10 +9,11 @@ type GitHub struct {
 }
 
 // GitHubLoginURL generates the GitHub OAuth login URL
-func (gh GitHub) GitHubLoginURL(state string) string {
+func (gh GitHub) GitHubLoginURL() string {
 	return "https://github.com/login/oauth/authorize?" +
 		"client_id=" + gh.ClientID + "&" +
 		"redirect_uri=" + gh.RedirectURI + "&" +
-		"scope=user:email" + "&" +
-		"state=" + state // Prevent CSRF attacks
+		"scope=user:email" + "&"
+	// +
+	// "state=" + state // Prevent CSRF attacks
 }

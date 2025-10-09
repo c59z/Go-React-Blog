@@ -14,5 +14,6 @@ func (b *BaseRouter) InitBaseRouter(Router *gin.RouterGroup) {
 	{
 		baseRouter.POST("captcha", baseApi.Captcha)
 		baseRouter.POST("sendEmailVerifcationCode", baseApi.SendEmailVerifcationCode)
+		baseRouter.GET("githubLoginURL", baseApi.GithubLoginURL)
 	}
 }
