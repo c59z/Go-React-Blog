@@ -57,6 +57,7 @@ func (b *BaseApi) SendEmailVerifcationCode(c *gin.Context) {
 	// 	response.OkWithMessage("Successfully sent email", c)
 	// 	return
 	// }
+
 	// todo test
 	err = baseService.SendEmailVerifcationCode(c, req.Email)
 	if err != nil {
@@ -65,6 +66,7 @@ func (b *BaseApi) SendEmailVerifcationCode(c *gin.Context) {
 		return
 	}
 	response.OkWithMessage("Successfully sent email", c)
+
 }
 
 func (b *BaseApi) GithubLoginURL(c *gin.Context) {
