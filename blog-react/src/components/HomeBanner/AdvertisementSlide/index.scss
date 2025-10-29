@@ -1,0 +1,35 @@
+.ad-slide {
+  position: relative;
+  display: block;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.ad-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ad-mask {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ad-mask h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.ad-mask p {
+  margin-top: 4px;
+  font-size: 14px;
+  opacity: 0.85;
+}

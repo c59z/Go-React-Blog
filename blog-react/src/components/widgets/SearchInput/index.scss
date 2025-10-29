@@ -1,0 +1,24 @@
+.search-input {
+  display: flex;
+  align-items: center;
+}
+
+.search-input__field {
+  width: 12rem;
+}
+
+.search-input__field .MuiInputBase-root {
+  height: 2rem;
+  font-size: 0.8125rem;
+  padding: 0;
+}
+
+.search-input__field input {
+  padding: 0 0.75rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.search-input__field .MuiOutlinedInput-notchedOutline {
+  border-radius: 0.375rem;
+}

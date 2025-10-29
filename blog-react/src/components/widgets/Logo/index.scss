@@ -1,0 +1,40 @@
+.logo-root-style {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  user-select: none;
+}
+
+.logo-text-wrapper-style {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-md-style {
+  .logo-image-style {
+    height: 3rem;
+  }
+
+  .logo-title-style {
+    font-size: 1.25rem;
+  }
+
+  .logo-subtitle-style {
+    font-size: 1rem;
+  }
+}
+
+.logo-sm-style {
+  .logo-image-style {
+    height: 2.5rem;
+  }
+
+  .logo-title-style {
+    font-size: 1rem;
+  }
+
+  .logo-subtitle-style {
+    font-size: 0.75rem;
+  }
+}

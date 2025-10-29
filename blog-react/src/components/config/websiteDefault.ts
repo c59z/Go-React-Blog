@@ -1,0 +1,17 @@
+export const websiteDefaultConfig = {
+  logo: "",
+  full_logo: "",
+  title: "c59z's blog",
+  slogan: "Write code. Write life.",
+  slogan_en: "Simple & Clean Tech Blog",
+  description: "A personal blog powered by Go and React",
+  version: "1.0.0",
+  created_at: "2025-01-15",
+  bilibili_url: "",
+  github_url: "",
+  name: "",
+  job: "",
+  address: "",
+  email: "",
+  github_image: "",
+};

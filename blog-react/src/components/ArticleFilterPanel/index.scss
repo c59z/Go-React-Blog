@@ -1,0 +1,19 @@
+.article-filter-panel {
+  min-width: 30rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--card-border, #eee);
+
+  .article-list-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .search-input {
+    margin: 0.75rem 0 0.75rem 3rem;
+  }
+}

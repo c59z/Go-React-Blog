@@ -1,0 +1,41 @@
+@use "sass:color";
+
+.article-list-item {
+  .article-readmore-btn {
+    align-self: flex-end;
+
+    padding: 0.3rem 0.9rem;
+    min-height: auto;
+
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+
+    color: #ffffff;
+    background-color: #45c9c9;
+    border: 1px solid #95d9ed;
+    border-radius: 999px;
+
+    text-transform: none;
+    box-shadow: none;
+
+    transition: background-color 0.2s ease, box-shadow 0.2s ease,
+      transform 0.15s ease;
+
+    &:hover {
+      background-color: color.adjust(#45c9c9, $lightness: 6%);
+      box-shadow: 0 6px 16px rgba(69, 201, 201, 0.35);
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 8px rgba(69, 201, 201, 0.25);
+    }
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(149, 217, 237, 0.45);
+    }
+  }
+}
