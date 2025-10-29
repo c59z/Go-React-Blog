@@ -1,2 +1,7 @@
 /BL/conf.yaml
 /BL/log**
+/BL/upload**
+/blog-go/conf.yaml
+/blog-go/log**
+/blog-go/upload**
+/blog-react/node_modules**

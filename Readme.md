@@ -15,25 +15,5 @@ docker run --name redis -p 6379:6379 -d redis
 ### 2. Go 环境配置
 
 ```bash
-go get "gopkg.in/yaml.v3"
-
-go get "go.uber.org/zap"
-go get "github.com/natefinch/lumberjack"
-
-go get "github.com/fvbock/endless"
-
-go get "github.com/gin-gonic/gin"
-
-go get "gorm.io/gorm"
-go get "gorm.io/driver/mysql"
-
-go get "github.com/go-redis/redis"
-
-go get "github.com/elastic/go-elasticsearch/v8"
-
-go get "github.com/robfig/cron/v3"
-
-go get "github.com/songzhibin97/gkit/cache/local_cache"
-
-go get "github.com/gofrs/uuid"
+// todo
 ```
