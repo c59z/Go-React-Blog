@@ -108,14 +108,13 @@ export const routes = [
     path: "/",
     element: <WebLayout />,
     children: [
-      { index: true, element: <HomePage />, meta: { title: "首页" } },
-      { path: "search", element: <SearchPage />, meta: { title: "搜索" } },
+      { index: true, element: <HomePage /> },
+      { path: "search", element: <SearchPage /> },
       {
         path: "friend-link",
         element: <FriendLinkPage />,
-        meta: { title: "友链" },
       },
-      { path: "about", element: <AboutPage />, meta: { title: "关于" } },
+      { path: "about", element: <AboutPage /> },
     ],
   },
 
