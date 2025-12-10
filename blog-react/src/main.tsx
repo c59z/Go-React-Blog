@@ -6,6 +6,7 @@ import { router } from "./router/routes.tsx";
 import { setGlobalTitle } from "./utils/websiteUtils.ts";
 
 setGlobalTitle();
+// todo icon
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
