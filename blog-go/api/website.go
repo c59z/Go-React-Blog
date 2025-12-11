@@ -16,9 +16,9 @@ type WebsiteApi struct{}
 
 func (websiteApi *WebsiteApi) WebsiteLogo(c *gin.Context) {
 	if global.Config.Website.Logo != "" {
-		c.Redirect(http.StatusMovedPermanently, global.Config.Website.Logo)
+		c.Redirect(http.StatusFound, global.Config.Website.Logo)
 	} else {
-		c.Redirect(http.StatusMovedPermanently, "/image/logo.png")
+		c.Redirect(http.StatusFound, "/uploads/image/logo.png")
 	}
 }
 

@@ -4,6 +4,7 @@ import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router/routes.tsx";
 import { setGlobalTitle } from "./utils/websiteUtils.ts";
+import App from "./App.tsx";
 
 setGlobalTitle();
 // todo icon
@@ -11,5 +12,6 @@ setGlobalTitle();
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <App></App>
   </StrictMode>
 );
