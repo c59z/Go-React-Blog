@@ -109,6 +109,7 @@ export const routes = [
     element: <WebLayout />,
     children: [
       { index: true, element: <HomePage /> },
+      { path: "article/:id", element: <ArticlePage /> },
       { path: "search", element: <SearchPage /> },
       {
         path: "friend-link",
@@ -119,8 +120,6 @@ export const routes = [
   },
 
   { path: "/login", element: <LoginPage /> },
-
-  { path: "/article/:id", element: <ArticlePage /> },
 
   {
     path: "/dashboard",

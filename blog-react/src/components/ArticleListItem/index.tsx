@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import ArticleCover from "../widgets/ArticleCover";
 import "./index.scss";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   id: string;
@@ -17,9 +18,10 @@ interface Props {
 }
 
 const ArticleListItem = ({ id, article }: Props) => {
+  const navigate = useNavigate();
+
   const handleReadMoreClick = () => {
-    // todo get ArticleDetial
-    console.log(id);
+    navigate(`/article/${id}`);
   };
 
   return (

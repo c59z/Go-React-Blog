@@ -4,7 +4,7 @@ import WebFooter from "@/components/layout/WebFooter";
 import MainLayout from "../MainLayout";
 import { Toolbar } from "@mui/material";
 
-function App() {
+function WebLayout() {
   return (
     <>
       <WebNavbar></WebNavbar>
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default WebLayout;

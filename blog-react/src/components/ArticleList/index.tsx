@@ -83,9 +83,7 @@ const ArticleList = () => {
         ))}
       </Stack>
       {!loading && hasMore && (
-        <div ref={loadMoreRef} style={{ height: 32 }}>
-          11111
-        </div>
+        <div ref={loadMoreRef} style={{ height: 32 }}></div>
       )}
 
       {!articles.length && (
