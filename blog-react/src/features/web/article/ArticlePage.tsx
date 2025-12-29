@@ -3,6 +3,10 @@ import "./ArticlePage.scss";
 import ArticleContent from "./components/ArticleContent";
 import ArticleTOC from "./components/ArticleTOC";
 import { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import ArticleHeader from "./components/ArticleHeader";
+import { Stack } from "@mui/material";
+import { useArticle } from "./hook/useArticle";
 
 export interface HeadingItem {
   id: string;
@@ -12,12 +16,26 @@ export interface HeadingItem {
 
 const ArticleDetailPage = () => {
   const [headings, setHeadings] = useState<HeadingItem[]>([]);
+  const { id } = useParams();
+  const { article, loading, error } = useArticle(id);
+  const navigate = useNavigate();
+
+  if (error) {
+    navigate("/error", { replace: true });
+    return;
+  }
 
   return (
     <div className="article-detail-page">
       <TwoColumnLayout
-        main={<ArticleContent onHeadingsChange={setHeadings} />}
+        main={
+          <Stack className="article-detail-body" spacing={4}>
+            <ArticleHeader article={article!} />
+            <ArticleContent onHeadingsChange={setHeadings} />
+          </Stack>
+        }
         aside={<ArticleTOC headings={headings} />}
+        loading={loading}
       />
     </div>
   );

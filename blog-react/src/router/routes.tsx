@@ -101,7 +101,7 @@ const JwtConfigPage = lazy(
 //
 // Errors
 //
-const NotFoundPage = lazy(() => import("@/features/error/NotFoundPage"));
+const ErrorPage = lazy(() => import("@/features/error/ErrorPage"));
 
 export const routes = [
   {
@@ -185,7 +185,7 @@ export const routes = [
     ],
   },
 
-  { path: "*", element: <NotFoundPage /> },
+  { path: "*", element: <ErrorPage /> },
 ];
 
 export const router = createBrowserRouter(routes);
