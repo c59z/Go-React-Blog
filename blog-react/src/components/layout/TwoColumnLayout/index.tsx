@@ -14,7 +14,7 @@ const TwoColumnLayout = ({ main, aside, loading }: Props) => {
       <Stack
         alignItems="center"
         justifyContent="center"
-        sx={{ minHeight: "60vh" }}
+        sx={{ Height: "100vh" }}
       >
         <CircularProgress />
       </Stack>

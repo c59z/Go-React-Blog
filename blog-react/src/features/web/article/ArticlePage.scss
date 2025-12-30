@@ -2,6 +2,10 @@
   margin-top: 2rem;
   min-height: 100vh;
 
+  .article-detail-body {
+    margin: 2rem 0;
+  }
+
   .TwoColumnLayout {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -15,8 +19,7 @@
   .article-toc {
     position: sticky;
     top: 5rem;
-    max-height: calc(100vh - 5rem);
-    overflow-y: auto;
+    height: auto;
 
     padding: 1rem;
     border-radius: 0.75rem;

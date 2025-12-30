@@ -1,48 +1,26 @@
-import { useEffect, useState } from "react";
 import type { HeadingItem } from "../../ArticlePage";
+import "./index.scss";
+import { useScrollSpyWithClickLock } from "./hook/useScrollSpyWithClickLock";
 
 interface Props {
   headings: HeadingItem[];
 }
 
 const ArticleTOC = ({ headings }: Props) => {
-  const [activeId, setActiveId] = useState("");
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            setActiveId(e.target.id);
-          }
-        });
-      },
-      { rootMargin: "0px 0px -70% 0px" }
-    );
-
-    headings.forEach((h) => {
-      const el = document.getElementById(h.id);
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, [headings]);
-
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+  const { activeId, scrollTo } = useScrollSpyWithClickLock(headings, {
+    offset: 96,
+    lockDuration: 400,
+  });
 
   return (
     <aside className="article-toc">
-      <div className="toc-title">目录</div>
+      <div className="toc-title">Index</div>
 
       <ul>
         {headings.map((h) => (
           <li
             key={h.id}
-            className={`${activeId === h.id ? "active" : ""} level-${h.level}`}
+            className={`level-${h.level} ${activeId === h.id ? "active" : ""}`}
             onClick={() => scrollTo(h.id)}
           >
             {h.text}
@@ -52,5 +30,4 @@ const ArticleTOC = ({ headings }: Props) => {
     </aside>
   );
 };
-
 export default ArticleTOC;

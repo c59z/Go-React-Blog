@@ -20,6 +20,14 @@ const ArticleDetailPage = () => {
   const { article, loading, error } = useArticle(id);
   const navigate = useNavigate();
 
+  if (loading) {
+    return <TwoColumnLayout loading={true} main={null} aside={null} />;
+  }
+
+  if (!article) {
+    return null;
+  }
+
   if (error) {
     navigate("/error", { replace: true });
     return;
@@ -31,7 +39,10 @@ const ArticleDetailPage = () => {
         main={
           <Stack className="article-detail-body" spacing={4}>
             <ArticleHeader article={article!} />
-            <ArticleContent onHeadingsChange={setHeadings} />
+            <ArticleContent
+              content={article!.content}
+              onHeadingsChange={setHeadings}
+            />
           </Stack>
         }
         aside={<ArticleTOC headings={headings} />}
