@@ -11,8 +11,25 @@ import Logo from "@/components/widgets/Logo";
 import "./index.scss";
 import UserAvatar from "@/components/widgets/UserAvatar";
 import { ElevationScroll } from "@/components/ElevationScroll";
+import { useNavigate } from "react-router-dom";
 
 const WebNavbar = () => {
+  const navigate = useNavigate();
+
+  const handleHome = () => {
+    navigate("/");
+  };
+
+  const handleBlog = () => {
+    // todo go to /search
+    navigate("/");
+  };
+
+  const handleAbout = () => {
+    // todo go to /about
+    navigate("/");
+  };
+
   return (
     <ElevationScroll>
       <AppBar position="fixed" elevation={0} className="web-navbar">
@@ -26,9 +43,15 @@ const WebNavbar = () => {
 
             {/* Navbar PC */}
             <Box className="web-navbar-right desktop-only">
-              <Button className="nav-item">Home</Button>
-              <Button className="nav-item">Blog</Button>
-              <Button className="nav-item">About</Button>
+              <Button onClick={handleHome} className="nav-item">
+                Home
+              </Button>
+              <Button onClick={handleBlog} className="nav-item">
+                Blog
+              </Button>
+              <Button onClick={handleAbout} className="nav-item">
+                About
+              </Button>
               <UserAvatar />
             </Box>
 

@@ -1,0 +1,79 @@
+.article-comment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+
+  .comment-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .comment-body {
+    flex: 1;
+  }
+
+  .comment-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+
+    .comment-username {
+      font-weight: 600;
+    }
+
+    .comment-time {
+      color: #999;
+    }
+
+    .comment-delete {
+      margin-left: auto;
+      background: none;
+      border: none;
+      color: #999;
+      cursor: pointer;
+
+      &:hover {
+        color: #ff4d4f;
+      }
+    }
+  }
+
+  .comment-content {
+    margin: 0.25rem 0 0.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+
+  .comment-actions {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+
+    button {
+      background: none;
+      border: none;
+      color: #666;
+      cursor: pointer;
+
+      &:hover {
+        color: #1677ff;
+      }
+    }
+  }
+}
+
+.comment-item.level-1 {
+  margin-left: 0;
+}
+
+.comment-item.level-2 {
+  margin-left: 24px;
+}
+
+.comment-item.level-3 {
+  margin-left: 48px;
+}

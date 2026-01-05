@@ -12,7 +12,7 @@ const ArticleTOC = ({ headings }: Props) => {
     lockDuration: 400,
   });
 
-  return (
+  const aside = headings && headings.length && (
     <aside className="article-toc">
       <div className="toc-title">Index</div>
 
@@ -29,5 +29,7 @@ const ArticleTOC = ({ headings }: Props) => {
       </ul>
     </aside>
   );
+
+  return aside || null;
 };
 export default ArticleTOC;

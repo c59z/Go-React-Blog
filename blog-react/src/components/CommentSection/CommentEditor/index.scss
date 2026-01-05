@@ -1,0 +1,54 @@
+.comment-editor {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+
+  textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    background: transparent;
+  }
+
+  &.active {
+    border-color: #ccc;
+  }
+
+  .editor-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+
+    button {
+      border-radius: 999px;
+      padding: 0.4rem 1rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-cancel {
+      background: transparent;
+      color: #666;
+
+      &:hover {
+        background: #f2f2f2;
+      }
+    }
+
+    .btn-submit {
+      background: #1677ff;
+      color: #fff;
+
+      &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

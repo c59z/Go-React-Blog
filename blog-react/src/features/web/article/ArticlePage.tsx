@@ -7,6 +7,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import ArticleHeader from "./components/ArticleHeader";
 import { Stack } from "@mui/material";
 import { useArticle } from "./hook/useArticle";
+import CommentSection from "@/components/CommentSection";
 
 export interface HeadingItem {
   id: string;
@@ -43,6 +44,7 @@ const ArticleDetailPage = () => {
               content={article!.content}
               onHeadingsChange={setHeadings}
             />
+            <CommentSection articleId={id!}></CommentSection>
           </Stack>
         }
         aside={<ArticleTOC headings={headings} />}
