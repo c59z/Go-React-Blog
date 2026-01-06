@@ -4,6 +4,7 @@ import { router } from "@/router/routes.tsx";
 import { ThemeProvider } from "@emotion/react";
 import theme from "@/theme";
 import { CssBaseline } from "@mui/material";
+import { SnackbarProvider } from "notistack";
 
 interface Props {
   children?: ReactNode;
@@ -12,9 +13,18 @@ interface Props {
 const AppProviders = ({ children }: Props) => {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline></CssBaseline>
-      <RouterProvider router={router} />
-      {children}
+      <SnackbarProvider
+        maxSnack={3}
+        autoHideDuration={3000}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "center",
+        }}
+      >
+        <CssBaseline></CssBaseline>
+        <RouterProvider router={router} />
+        {children}
+      </SnackbarProvider>
     </ThemeProvider>
   );
 };

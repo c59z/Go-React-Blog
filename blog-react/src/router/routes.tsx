@@ -17,7 +17,7 @@ const ArticlePage = lazy(() => import("@/features/web/article/ArticlePage"));
 //
 // Auth
 //
-const LoginPage = lazy(() => import("@/features/auth/login/LoginPage"));
+const LoginPage = lazy(() => import("@/features/auth/login"));
 
 //
 // Dashboard

@@ -16,8 +16,10 @@ export interface ApiResponse<T> {
 }
 
 service.interceptors.request.use((config: AxiosRequestConfig) => {
+  const token = localStorage.getItem("access_token");
   config.headers = {
     "Content-Type": "application/json",
+    "x-access-token": token,
     ...config.headers,
   };
   return config as InternalAxiosRequestConfig;

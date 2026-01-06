@@ -19,7 +19,7 @@ type CommentService struct {
 
 func (commentService *CommentService) CommentInfoByArticleID(req request.CommentInfoByArticleID) ([]database.Comment, error) {
 	var comments []database.Comment
-	if err := global.DB.Where("article_id = ? AND p_id IS NULL", req.ArticleID).Preload("User", func(db *gorm.DB) *gorm.DB {
+	if err := global.DB.Where("article_id = ? AND p_id IS NULL", req.ArticleID).Order("created_at DESC").Preload("User", func(db *gorm.DB) *gorm.DB {
 		return db.Select("uuid, username, avatar, address, signature")
 	}).Find(&comments).Error; err != nil {
 		return nil, err
