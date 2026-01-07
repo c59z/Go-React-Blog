@@ -6,7 +6,6 @@ export interface CommentItemProps {
   canDelete: boolean;
 
   /** 事件回调 */
-  onReply: (commentId: string) => void;
-  onLike: (commentId: string) => void;
   onDelete: (commentId: string) => void;
+  onReplySuccess: () => void;
 }

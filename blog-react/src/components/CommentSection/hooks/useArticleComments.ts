@@ -6,6 +6,7 @@ export const useArticleComments = (articleId?: string) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // --- 加载评论 ---
   const load = useCallback(async () => {
     if (!articleId) return;
 
@@ -31,10 +32,39 @@ export const useArticleComments = (articleId?: string) => {
     load();
   }, [load]);
 
+  // --- 方法 1：递归删除评论 ---
+  const removeCommentById = useCallback(
+    (id: number, list: Comment[]): Comment[] => {
+      return list
+        .filter((c) => c.id !== id)
+        .map((c) => ({
+          ...c,
+          children: c.children ? removeCommentById(id, c.children) : [],
+        }));
+    },
+    []
+  );
+
+  const deleteComment = useCallback(
+    (id: number) => {
+      setComments((prev) => removeCommentById(id, prev));
+    },
+    [removeCommentById]
+  );
+
+  const updateComments = useCallback(
+    (updater: (prev: Comment[]) => Comment[]) => {
+      setComments((prev) => updater(prev));
+    },
+    []
+  );
+
   return {
     comments,
     loading,
     error,
     reload: load,
+    deleteComment,
+    updateComments,
   };
 };

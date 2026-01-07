@@ -17,7 +17,7 @@ export const auth = {
     const expiresAt = Number(localStorage.getItem(EXPIRES_KEY));
     if (!expiresAt) return true;
 
-    const exp = expiresAt * 1000;
+    const exp = expiresAt;
 
     return Date.now() >= exp;
   },

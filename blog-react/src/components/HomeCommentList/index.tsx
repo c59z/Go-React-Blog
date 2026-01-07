@@ -16,7 +16,12 @@ const HomeCommentList = () => {
           <Box key={comment.id} className="comment-item">
             <Box className="comment-header">
               <Box className="comment-user">
-                <Avatar src={comment.user.avatar} className="comment-avatar" />
+                <Avatar
+                  src={`${import.meta.env.VITE_SERVER_URL}${
+                    comment.user.avatar
+                  }`}
+                  className="comment-avatar"
+                />
                 <Typography className="comment-username">
                   {comment.user.username}
                 </Typography>
