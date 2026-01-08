@@ -1,8 +1,9 @@
-import { useState } from "react";
-import FilterSection from "./FilterSection";
+// import { useState } from "react";
+// import FilterSection from "./FilterSection";
 import "./index.scss";
-import SearchInput from "../widgets/SearchInput";
+// import SearchInput from "../widgets/SearchInput";
 import { Typography } from "@mui/material";
+import { SearchBar } from "../SearchBar";
 
 /**
  * TODO: Advanced structured search
@@ -19,22 +20,19 @@ import { Typography } from "@mui/material";
  */
 
 const ArticleFilterPanel = () => {
-  const [category, setCategory] = useState("all");
-  const [tag, setTag] = useState("all");
-  const [order, setOrder] = useState("default");
-  const [searchText, setSearchText] = useState<string>("");
+  // const [category, setCategory] = useState("all");
+  // const [tag, setTag] = useState("all");
+  // const [order, setOrder] = useState("default");
 
   return (
     <div className="article-filter-panel">
       <Typography className="article-list-title">Article Search</Typography>
 
-      <SearchInput
-        className="search-input"
-        value={searchText}
-        onChange={setSearchText}
-        onClear={() => setSearchText("")}
-      ></SearchInput>
+      {/* <div className="search-input"> */}
+      <SearchBar></SearchBar>
+      {/* </div> */}
 
+      {/* 
       <FilterSection
         title="分类"
         value={category}
@@ -71,6 +69,7 @@ const ArticleFilterPanel = () => {
           { label: "点赞", value: "like" },
         ]}
       />
+       */}
     </div>
   );
 };
